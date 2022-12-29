@@ -20,7 +20,7 @@ class pretrained:
         
         if download_model:
             # Download model and save to specific place - if already downloaded do not download again
-            model_folder = model_folder or os.path.join(os.path.dirname(__file__), "model-weights-{}".format(chain))
+            model_folder = os.path.join(model_folder or os.path.dirname(__file__), "model-weights-{}".format(chain))
             os.makedirs(model_folder, exist_ok = True)
             
             if not os.path.isfile(os.path.join(model_folder, "amodel.pt")):
