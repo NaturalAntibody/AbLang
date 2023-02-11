@@ -21,5 +21,6 @@ setup(
         'fairseq',
         'torch>=1.6; platform_machine != "aarch64"',
         'torch==1.12.0; platform_machine == "aarch64"',
+        'torch>=1.12.0; platform_machine == "arm64"',
     ],
 )
